@@ -1,0 +1,20 @@
+[
+  {"id": 1, "text": "빨리돈_갚아요 홍길동씨 연락주세요", "note": "underscore between words to break word boundary"},
+  {"id": 2, "text": "빨리 d0n 갚아 주세요", "note": "use latin o/0 and spaces in money word"},
+  {"id": 3, "text": "고객센터:  문의드립니다. 돈 관련 안내입니다 (확인부탁)", "note": "contains whitelist + ham keywords to reduce score"},
+  {"id": 4, "text": "₩송금 바로가능. 연락 010·1234·5678", "note": "currency symbol + middle dot as obfuscation"},
+  {"id": 5, "text": "갚아주세요😊 바로 입금할게요", "note": "emoji inside message"},
+  {"id": 6, "text": "돈(갚음) 요청: 연락바랍니다", "note": "parentheses around money-related token"},
+  {"id": 7, "text": "입금-확인: ０１０-１２３４-５６７８", "note": "fullwidth digits to obfuscate phone"},
+  {"id": 8, "text": "대 출 상담 가능합니다—무료", "note": "insert space in the middle of a keyword (대 출)"},
+  {"id": 9, "text": "문의드립니다. 01012345678 로 연락바랍니다", "note": "phone digits without separators (may be caught but sometimes normalized differently)"},
+  {"id": 10, "text": "계좌: o1o-1234-5678 (영문 o & 1 confusable)", "note": "homoglyph mix in phone"},
+  {"id": 11, "text": "Immediate: please transfer funds to account", "note": "English content — keyword list is Korean so may slip"},
+  {"id": 12, "text": "돈-갚-아-요", "note": "insert hyphens between syllables to break matching"},
+  {"id": 13, "text": "이름: 홍길동 홍길동 (개인) 연락요", "note": "name repeated but with normal tone and whitelist words"},
+  {"id": 14, "text": "공일공.일이삼사.일이삼사 기다립니다", "note": "korean number words with dots — some detectors catch but may slip if formatted"},
+  {"id": 15, "text": "무료혜택: 돈이 필요하시면 상담진행", "note": "mix marketing + money term to look like legitimate offer"},
+  {"id": 16, "text": "카카오뱅크입니다. www.kakao.com 수신거부 080-1234... 단, 대출 관련 안내", "note": "trusted sender name included to try to bypass"},
+  {"id": 17, "text": "계좌번호는 ①②③④⑤⑥⑦⑧⑨⑩ 입니다", "note": "circled numbers to hide digits"},
+  {"id": 18, "text": "갚아요→연락주세요", "note": "use arrow or symbol separators"}
+]

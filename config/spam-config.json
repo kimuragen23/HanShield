@@ -1,0 +1,89 @@
+{
+  "threshold": 2,
+  "weights": {
+    "url": 3,
+    "email": 2,
+    "phone": 2,
+    "repeated": 1,
+    "keyword": 1,
+    "ham_keyword_subtract": 1
+  },
+  "whitelist_phrases": [
+    "고객센터",
+    "문의드립니다",
+    "감사합니다",
+    "안녕하세요"
+  ],
+  "ham_keywords": [
+    "안녕하세요",
+    "감사",
+    "문의드립니다",
+    "확인부탁"
+  ],
+  "trusted_senders": [
+    "국민은행",
+    "KB국민은행",
+    "KB",
+    "신한",
+    "하나은행",
+    "카카오뱅크",
+    "우리은행",
+    "농협"
+  ],
+  "money_keywords": [
+    "돈",
+    "돈빌",
+    "빌려",
+    "대출",
+    "계좌",
+    "갚",
+    "갚아",
+    "갚아요",
+    "입금",
+    "송금",
+    "지급",
+    "지급금",
+    "환불",
+    "수령",
+    "수금"
+  ],
+  "phone_money_boost": 3,
+  "whitelist_subtract": 2,
+  "urgent_words": [
+    "빨리",
+    "즉시",
+    "긴급"
+  ],
+  "urgent_money_boost": 0,
+  "repeat_name_boost": 0,
+  "unsubscribe_patterns": [
+    "수신거부",
+    "수신거부:",
+    "수신거부 -",
+    "080-",
+    "080 "
+  ]
+  ,
+  "domain_blacklist": [
+    ""
+  ],
+  "regex_blacklist": [
+    ""
+  ],
+  "blacklist_weight": 5
+  ,
+  "category_keywords": {
+    "illegal_loan": ["불법대출", "초저금리", "무서류", "무담보", "대출광고", "대출전액"],
+    "adult": ["성인광고", "성인용품", "유흥", "성매매", "야한"],
+    "illegal_drugs": ["불법의약품", "해외직구약", "불법약", "인터넷약"],
+    "gambling": ["도박", "카지노", "바카라", "슬롯", "사행성"],
+    "real_estate": ["분양", "분양권", "오피스텔분양", "분양광고", "부동산분양"]
+  },
+  "category_weights": {
+    "illegal_loan": 5,
+    "adult": 5,
+    "illegal_drugs": 6,
+    "gambling": 6,
+    "real_estate": 4
+  }
+}
